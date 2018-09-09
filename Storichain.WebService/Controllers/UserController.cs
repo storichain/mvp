@@ -114,18 +114,6 @@ namespace Storichain.Controllers
 
                 string user_id = WebUtility.GetRequestWithEcryption("user_id", WebUtility.GetRequest("enc_use_yn", "N"));
 
-                //if(WebUtility.GetRequestByInt("sns_type_idx", 4) == 4)
-                //{
-                //    //BizUtility.GetKakaoOldUserID("70047663");
-                //    string convert_user_id = BizUtility.GetKakaoOldUserID(user_id);
-
-                //    if(!convert_user_id.Equals(""))
-                //    {
-                //        user_id = convert_user_id;
-                //    }
-                //}
-
-
                 if(biz.IsExistAtSiteUserId(WebUtility.GetRequest("user_id")))
                 {
                     json = DataTypeUtility.JSon("2011", Config.R_EXIST_SITE_USER_ID, "existed site_user_id.", null);

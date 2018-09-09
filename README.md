@@ -10,5 +10,5 @@ These are contained of 3 projects.
  
 # Storichain MVP Project
  This is the Storichain MVP Project.  
- Some parts of these sources are excepted from the origin ones for protecting sensitive datas.  
- We are consistenly developing projects now.  
+ Some parts of these sources are excepted from the origin ones for protecting our sensitive datas.  
+ We are consistenly developing this projects.  

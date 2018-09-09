@@ -18,7 +18,6 @@ namespace Storichain.WebSite.User
 			{
                 if (Context.User.Identity.IsAuthenticated)
                 {
-                    //Response.Write(JSHelper.GetScript("parent.location.href = '" + WebUtility.GetConfig("WEBSITE_URL") + "'"));
                     Response.Redirect(WebUtility.GetRequest("ReturnUrl", "discover"));
                 }
                 else

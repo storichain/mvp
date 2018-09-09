@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0">
+        <title>StoriChain - 작성하기(인풋모드) </title>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/talkdio_admin.css">
+        <link rel="stylesheet" type="text/css" href="./css/common.css">
+        <script src="./js/jquery-3.2.1.min.js"></script>    
+        <script src="./js/html5shiv.js"></script>
+        <!--[if lt IE 9]>
+        <script src="html5shiv.js"></script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="css3-mediaqueries.js"></script>
+        <![endif]-->     
+    </head>
+    <body>
+        <section class="wrapper">    
+            <header>
+                <button href="#" class="out"></button>
+                <h1> 스토리 작성</h1>
+                <button class="manage_cont" type="button" onclick="location.href='./StoriAsset.html'"><img src="img/btn_manage_cont.png" alt="manage_cont">재료 관리</button>
+            </header>
+            <div class="inner">
+                <section class="input_tit">
+                    <input type="text" placeholder="타이틀을 입력하세요">
+                    <button class="create">생성</button>    
+                </section>
+                <section class="sceneList">
+                    <div class="secene">
+                        <div class="s_top">
+                            <h2>1</h2>
+                            <a class="del_scene"></a>
+                        </div>
+                        <div class="paragraph left">
+                            <div>
+                                <div class="character">
+                                    <span style="background-image:url(./img/img_profile.png)" alt="프로필 이미지" class="character_img">
+                                    </span>
+                                    <b class="name">등장인물1</b>
+                                </div>
+                                <ul class="bubble_list">
+                                    <li class="bubble">
+                                        <textarea onclick="this.select()" onfocus="this.select()" name="bubble" rows="4" ></textarea>
+                                        <div class="btn_tool">
+                                            <button class="input_ico">
+                                            아이콘 추가
+                                            </button>
+                                            <button class="input_img">
+                                            이미지 추가    
+                                            </button>
+                                            <button class="input_video">
+                                            비디오 추가    
+                                            </button>
+                                            <button class="input_link">
+                                            링크 추가       
+                                            </button>
+                                            <a href="#" class="del_bubble">
+                                            메세지 삭제       
+                                            </a>    
+                                        </div>
+                                    </li>
+                                    <li class="bubble">
+                                        <textarea onclick="this.select()" onfocus="this.select()" name="bubble" rows="4" ></textarea>
+                                        <div class="btn_tool">
+                                            <button class="input_ico">
+                                            아이콘 추가
+                                            </button>
+                                            <button class="input_img">
+                                            이미지 추가    
+                                            </button>
+                                            <button class="input_video">
+                                            비디오 추가    
+                                            </button>
+                                            <button class="input_link">
+                                            링크 추가       
+                                            </button>
+                                            <a href="#" class="del_bubble" >
+                                            메세지 삭제       
+                                            </a>    
+                                        </div>
+                                    </li>
+                                </ul> 
+                                <div class="btn_wrapper">
+                                    <a href="" class="add_bubble">
+                                        <img src="./img/btn_add_bubble.png" alt="말풍선추가">
+                                        말풍선 추가
+                                    </a>
+                                    <button class="del_para">
+                                        <span></span>단락삭제
+                                    </button>
+                                </div>
+                                <div class="add_paragraph">
+                                    <button class="add_p_btn">대화 단락 추가<span></span></button>
+                                    <ul class="sel_charactor">
+                                        <li class="t">캐릭터 선택</li>
+                                        <li class="l">등장인물1</li>
+                                        <li class="l">초심이</li>
+                                        <li class="r">사재기여왕</li>
+                                    </ul>
+                                </div>    
+                            </div>   
+                        </div>
+                        <div class="paragraph right">
+                            <div>
+                                <div class="character">
+                                    <span style="background-image:url(./data/profile_sample_01.jpg)" alt="프로필 이미지" class="character_img">
+                                    </span>
+                                    <b class="name">등장인물2</b>
+                                </div>
+                                <ul class="bubble_list">
+                                    <li class="bubble">
+                                        <textarea onclick="this.select()" onfocus="this.select()" name="bubble" rows="4" ></textarea>
+                                        <div class="btn_tool">
+                                            <button class="input_ico">
+                                            아이콘 추가
+                                            </button>
+                                            <button class="input_img">
+                                            이미지 추가    
+                                            </button>
+                                            <button class="input_video">
+                                            비디오 추가    
+                                            </button>
+                                            <button class="input_link">
+                                            링크 추가       
+                                            </button>
+                                            <a href="#" class="del_bubble">
+                                            메세지 삭제       
+                                            </a>    
+                                        </div>
+                                    </li>
+                                    <li class="bubble">
+                                        <textarea onclick="this.select()" onfocus="this.select()" name="bubble" rows="4" ></textarea>
+                                        <div class="btn_tool">
+                                            <button class="input_ico">
+                                            아이콘 추가
+                                            </button>
+                                            <button class="input_img">
+                                            이미지 추가    
+                                            </button>
+                                            <button class="input_video">
+                                            비디오 추가    
+                                            </button>
+                                            <button class="input_link">
+                                            링크 추가       
+                                            </button>
+                                            <a href="#" class="del_bubble">
+                                            메세지 삭제       
+                                            </a>    
+                                        </div>
+                                    </li>
+                                </ul> 
+                                <div class="btn_wrapper">
+                                    <a href="" class="add_bubble">
+                                        <img src="./img/btn_add_bubble.png" alt="말풍선추가">
+                                        말풍선 추가
+                                    </a>
+                                    <button class="del_para">
+                                        <span></span>단락삭제
+                                    </button>
+                                </div>
+                                <div class="add_paragraph">
+                                    <button class="add_p_btn">대화 단락 추가<span></span></button>
+                                    <ul class="sel_charactor">
+                                        <li class="t">캐릭터 선택</li>
+                                        <li class="l">춘양이</li>
+                                        <li class="l">초심이</li>
+                                        <li class="r">사재기여왕</li>
+                                    </ul>
+                                </div>      
+                            </div>   
+                        </div>
+                        <div class="reaction">
+                            <button class="add_reaction">씬 리액션
+                                <img src="./img/btn_fold_react.png">
+                            </button>
+                            <ul class="reaction_list">
+                                <li class="type_more">
+                                    <div>
+                                        <b>더보기 형</b>
+                                        <input type="text" maxlength="12" placeholder="더보기 의미 버튼 최대 12자">
+                                        <button class="create">생성</button>
+                                    </div>    
+                                    <span class="react_txt on">그래서 그래서?<a href="#" class="del_react"></a></span>
+                                </li>
+                                <li class="type_link">
+                                    <div>
+                                        <b>링크이동 형</b>
+                                        <input type="text" maxlength="12" placeholder="이동 의미 버튼 최대 12자">
+                                        <button class="create">생성</button>
+                                    </div>
+                                     <div>
+                                        <input type="text" placeholder="http://URL 또는 API">
+                                    </div>
+                                    <span class="react_txt">뭐, 다른 거 더 없나?<a href="#" class="del_react"></a></span>
+                                </li>
+                            </ul>
+                       </div> 
+                    </div>
+                    <button class="add_secene"># 씬 추가</button>   
+            </section>
+            </div>    
+        </section>
+        <div class="controls">
+            <div class="issue">
+                발행
+                <div class="toggle">
+                    <span class="switch"></span>
+                    <b>OFF</b>
+                </div>    
+            </div>
+            <div class="preview">
+                <button class="btn_prev">미리보기<img src="./img/btn_preview.png"></button>
+            </div>
+            <div class="save">
+                <button class="btn_save">저장<img src="./img/btn_save.png"></button>
+            </div>
+        </div>
+    
+    <script>
+        $(document).ready(function(){
+            $('a').on('click', function(event){
+                event.preventDefault();
+            });
+            //=========대화단락추가 열기==========//
+            $('.add_p_btn').on('click', function(){
+                $(this).parent('.add_paragraph').toggleClass('show');
+            });
+            //=========발행 토글==========//
+            $('.toggle').on('click', function(){
+                $(this).toggleClass('on');
+                if($('.toggle').hasClass('on')){
+                    $(this).find('b').text('ON');
+                }
+                else{$(this).find('b').text('OFF');}
+            });
+            //=========씬 리액션 열기/닫기==========//
+            $('.add_reaction').on('click', function(){
+                /*$(this).parent('.reaction').toggleClass('show');*/
+                $(this).siblings('.reaction_list').slideToggle('show');
+                $(this).toggleClass('show');
+            });
+            //=========리앤션 버튼명 선택효과==========//
+            $('.react_txt').on('click', function(){
+                $(this).toggleClass('on');
+            });
+            //=========리액션 버튼 지우기==========//
+            $('.del_react').on('click', function(){
+                $(this).parent('.react_txt').remove();
+            });
+        });
+        
+    </script>    
+    </body>
+</html>

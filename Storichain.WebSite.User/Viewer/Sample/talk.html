@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0">
+        <title>TALK-DIO</title>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <script src="./js/jquery-3.2.1.min.js"></script>    
+        <script src="./js/html5shiv.js"></script>
+        <!--[if lt IE 9]>
+        <script src="html5shiv.js"></script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="css3-mediaqueries.js"></script>
+        <![endif]-->     
+    </head>
+    <body>
+        <script type='text/javascript'>
+            $(function(){
+                /*=======topbar 애니메이션/끼어들기 ON/OFF효과==========*/
+                $('.animation').on('click', function(){
+                    $('.animation').toggleClass('on');
+                });
+                $('.cut-in-msg').on('click', function(){
+                    $('.cut-in-msg').toggleClass('on');
+                });
+                /*=======topbar 제목텍스트 클릭시 full text show==========*/
+                $('h2>button').on('click', function(){
+                    $('.full_tit').toggleClass('show');
+                });
+                $('.full_tit').on('click', function(){
+                    $('.full_tit').removeClass('show');
+                });
+                /*
+                $('.cutin_msg').find('.noti > button').on('click', function(){
+                    $('.cutin_msg').toggleClass('show');
+                });
+                */
+                /*=======끼어들기 메세지 펼치기/접기==========*/
+                $('.cutin_msg').find('.noti > button, .foldin').on('click', function(){
+                    if($('.cutin_msg').hasClass('show')){
+                        $('.msg_wrap').slideUp('fast');
+                        $('.cutin_msg').removeClass('show');}
+                    else{
+                        $('.msg_wrap').slideDown();
+                        $('.cutin_msg').addClass('show');}
+                });
+                /*--======share 버튼 show=====*/
+                $('.share').on('click', function(){
+                    $('.sns').slideDown('fast');
+                    $('.share').hide('fast');
+                    $('.close').show('fast');
+                });
+                $('.close').on('click', function(){
+                    $('.sns').slideUp('fast');
+                    $('.share').show('fast');
+                    $('.close').hide('fast');
+                });
+            });
+         </script>
+        <!--======textarea 자동 사이즈 조절=====-->
+        <script>
+            function resize(obj){
+                obj.style.height = "1px";
+                obj.style.height = ( obj.scrollHeight)+'px';
+            }
+        </script>
+        <div class="inner talk">
+            <header>
+                <button class="btn_back">back</button>
+                <button class="btn_cls" style="display:none;">close</button>
+                <h1 style="display: none;">TALK-DIO</h1>
+                <h2 class="title">
+                    <button>
+                        선글라스는 원래 겨울에 쓰는 것?  선글라스는 원래 겨울에 쓰는 것?
+                    </button>
+                </h2>
+                <button class="cut-in-msg on">
+                </button>
+                <button class="animation on">
+                </button>
+                <div class="full_tit">
+                    <p>선글라스는 원래 겨울에 쓰는 것?  선글라스는 원래 겨울에 쓰는 것?
+                    </p>
+                </div>
+            </header>
+            <section class="wrapper">
+                <div class="scene">
+                    <div class="role">
+                        <dl class="type type_01">
+                            <dt class="writer">
+                                <img src="./img/img_profile.png" alt="writer">
+                                <b class="name">뷰티러버</b>
+                            </dt>
+                            <dd class="txt">
+                                <span>올리브영에서 마스카라 제일 싸게 사는 방법이 뭔줄 알아?</span>
+                            </dd>
+                            <dd class="emoticon">
+                                <span>
+                                    <img src="./data/emoticon_sample1.png"> 
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="role">
+                        <dl class="type type_02">
+                            <dt class="writer">
+                                <img src="./data/profile_sample1.png" alt="writer">
+                                <b class="name">사제기 여왕</b>
+                            </dt>
+                            <dd class="txt">
+                                <span>어? 그런 방법이 있었어?</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="role">
+                        <dl class="type type_01">
+                            <dt class="writer">
+                                <img src="./img/img_profile.png" alt="writer">
+                                <b class="name">뷰티러버</b>
+                            </dt>
+                            <dd class="txt">
+                                <span>크크 너 아직 몰랐구나~ 내가 지난 번에 기사로
+올려 놓은 게 있거든 여기 기사를 먼저 봐봐
+                                    <a href="http://www.beautytalk.co.kr/m/Article?event_idx=9204" target="_blank">> 기사 링크 보기</a></span>
+                            </dd>
+                            <dd class="img">
+                                <span>
+                                    <img src="./data/img_sample3.gif"> 
+                                </span>
+                            </dd>
+                            <dd class="txt">
+                                <span>뿐만 아니야~ 오늘 모든 드럭스토어에서 마스카라를 저렴하게 살 수 있는 방법을 알려 주려 해~ 어때? 구미 당김 당김?</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="role">
+                        <dl class="type type_02">
+                            <dt class="writer">
+                                <img src="./data/profile_sample1.png" alt="writer">
+                                <b class="name">사제기 여왕</b>
+                            </dt>
+                            <dd class="txt">
+                                <span>흥, 밑밥만 던지지 말고, 얼렁 불어라 빨랑 빨랑~</span>
+                            </dd>
+                            <dd class="emoticon">
+                                <span>
+                                    <img src="./data/emoticon_sample2.png"> 
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="role">
+                        <dl class="type type_01">
+                            <dt class="writer">
+                                <img src="./img/img_profile.png" alt="writer">
+                                <b class="name">뷰티러버</b>
+                            </dt>
+                            <dd class="txt">
+                                <span>오케이~ 자 봐봐</span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="role">
+                        <dl class="type type_03 me">
+                            <dd class="txt">
+                                <span>어? 그런 방법이 있었어?</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="cutin_msg">
+                        <div class="noti">
+                            <button>껴든 톡 	
+                                &#40;<span class="num">20</span>&#41;
+                                <div class="btn_bg"></div>
+                            </button>
+                            
+                            <div class="line"></div>
+                        </div>
+                        <div class="msg_wrap">
+                            <div class="msg_cont">
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+                                </div>
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+
+                                </div>
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+                                </div>
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+                                </div>
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="btn_group">
+                                <button class="more">더보기 &#40;<span class="num">20</span>&#41;</button>
+                                <button class="foldin">접기</button>
+                            </div>
+                        </div>    
+                </div>
+                <div class="scene">
+                    <div class="role">
+                        <dl class="type type_01">
+                            <dt class="writer">
+                                <img src="./img/img_profile.png" alt="writer">
+                                <b class="name">뷰티러버</b>
+                            </dt>
+                            <dd class="video">
+                               <iframe src="https://www.youtube.com/embed/JQ_vr5fMAZA?ecver=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </dd>
+                            <dd class="txt">
+                                <span>우리나라 드럭스토어 Olive Young, Watsons, LOHBs 에 가면 공통적으로 마스카라 가판대에는 QR 코드가 박혀 있어.</span>
+                            </dd>
+                            <dd class="txt">
+                                <span>거기에 뷰티톡 어플을 설치 한후 뷰티톡 어플에서 이벤트 매뉴 속 큐폰 탭을 눌러봐</span>
+                            </dd>
+                            <dd class="emoticon">
+                                <span>
+                                    <img src="./data/emoticon_sample1.png"> 
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="role">
+                        <dl class="type type_02">
+                            <dt class="writer">
+                                <img src="./data/profile_sample1.png" alt="writer">
+                                <b class="name">사제기 여왕</b>
+                            </dt>
+                            <dd class="txt">
+                                <span>근데 뷰티톡 어플에 그런게 있어? 뷰티톡 어플은 어디서 받는데?</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="role">
+                        <dl class="type type_01">
+                            <dt class="writer">
+                                <img src="./img/img_profile.png" alt="writer">
+                                <b class="name">뷰티러버</b>
+                            </dt>
+                            <dd class="txt">
+                                <span>너 아이폰 쓰니? 그렇담 바로 바로 여기</span>
+                            </dd>
+                            <dd class="txt">
+                                <span><a href="https://itunes.apple.com/kr/app/%EB%B7%B0%ED%8B%B0%ED%86%A1-%EB%B7%B0%ED%8B%B0-%EB%A7%A4%EA%B1%B0%EC%A7%84-%EB%86%80%EC%9D%B4%ED%84%B0/id721048932?mt=8]" target="_blank"> [뷰티톡] 뷰티 놀이터 - APP SOTRE</a>에서 받을 수 있어</span>
+                            </dd>
+                            <dd class="txt">
+                                <span>안드로이드는<a href="https://itunes.apple.com/kr/app/%EB%B7%B0%ED%8B%B0%ED%86%A1-%EB%B7%B0%ED%8B%B0-%EB%A7%A4%EA%B1%B0%EC%A7%84-%EB%86%80%EC%9D%B4%ED%84%B0/id721048932?mt=8]" target="_blank">[뷰티톡] 뷰티 놀이터 - GOOGLE PLAY</a>에서 받으면 되고~</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="cut_spot">
+                    <img src="./img/ico_cut_spot.png">
+                </div>
+                <div class="cutin_msg">
+                        <div class="noti">
+                            <button>껴든 톡 	
+                                &#40;<span class="num">20</span>&#41;
+                                <div class="btn_bg"></div>
+                            </button>
+                            
+                            <div class="line"></div>
+                        </div>
+                        <div class="msg_wrap">
+                            <div class="msg_cont">
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+                                </div>
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+
+                                </div>
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+                                </div>
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+                                </div>
+                                <div class="role">
+                                    <dl class="type type_03 me">
+                                        <dd class="txt">
+                                            <span>어? 그런 방법이 있었어?</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="role">
+                                    <dl class="type type_04">
+                                    <dt class="writer">
+                                        <img src="./data/profile_sample1.png" alt="writer">
+                                        <b class="name">뷰통령</b>
+                                    </dt>
+                                    <dd class="txt">
+                                        <span>내가 모를리 없는데... 그럴리 없다
+    내가 모를리 없는데... 그럴리 없다</span>
+                                    </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="btn_group">
+                                <button class="more">더보기 &#40;<span class="num">20</span>&#41;</button>
+                                <button class="foldin">접기</button>
+                            </div>
+                        </div>    
+                </div>
+                <div class="scene">
+                    <div class="ico_loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="user_react">
+                    <div class="share_group">
+                        <button class="share">share</button>
+                        <div class="shareTo">
+                            <div class="sns">
+                                <button class="link" onclick="">link</button>
+                                <button class="story" onclick="">story</button>
+                                <button class="kakao" onclick="">kakao</button>
+                                <button class="facebook" onclick="">facebook</button>
+                            </div>    
+                            <button class="close">close</button>
+                        </div>
+                    </div>    
+                    <div class="btn_area">
+                        <button class="yes">
+                            <span class="">어머 그래 정말??</span>
+                            <span class="charactor">
+                                <span class="heart_l"></span>
+                                <span class="heart_s"></span>
+                                <span class="ear"></span>
+                                <span class="glasses"></span>
+                                <span class="body"></span>
+                            </span>
+                        </button>
+                        <button class="no">
+                            <span class="">핵 노 관심</span>
+                            <span class="charactor">
+                                <span class="dots">
+                                    <b></b>
+                                    <b></b>
+                                    <b></b>
+                                </span>
+                                <span class="body"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="input_msg">
+                        <textarea onclick="this.select()" onfocus="this.select()" name="msg" rows="1" onkeydown="resize(this)" placeholder="껴들 말을 입력하세요" maxlength="250"></textarea>
+                        <button class="regist">등록</button>
+                    </div>
+                </div>    
+            </section>
+        </div>    
+    </body>
+</html>

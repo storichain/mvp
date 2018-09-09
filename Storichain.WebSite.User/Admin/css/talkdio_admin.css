@@ -1,0 +1,644 @@
+body{
+    font-family:'AppleSDGothicNeo-Light','HelveticaNeue-Light',sans-serif;
+    max-width:1024px;
+}
+/*
+==========================================================
+=====================@media max 1024===========================
+*/
+
+/*타이틀 생성*/
+.input_tit{
+    width:100%;
+    position:relative;
+}
+.input_tit>input[type="text"]{
+    width:100%;
+    border-bottom:1px solid #ddd;
+    height:52px;
+    padding:14px 80px 14px 14px;
+    font-size:16px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+button.create{
+    background-color:#f6f6f6;
+    color:#666;
+    position:absolute;
+    font-size:14px;
+    right:6px;
+    top:6px;
+    padding:10px 18px;
+    border-bottom: 2px solid #d5d5d5;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+button.create:hover{
+    background-color:#ff7676;
+    color:#fff;
+    border-bottom: 2px solid #da4e4e;
+}
+/*씬*/
+.sceneList{
+    padding:10px;
+}
+.secene{
+    background-color: #fff;
+    border:1px solid #d2d2d2;
+    
+}
+.secene>.s_top{
+    position:relative;
+    height:10px;
+    border-bottom: 1px solid #ddd;
+    padding:10px;
+}
+.secene>.s_top>h2{font-size:12px;}
+.secene>.s_top>h2:before{
+    content: "# 씬 SCENCE";
+    display: inline-block;
+    margin-right:6px;
+}
+.secene>.s_top>a.del_scene{
+    background:url(../img/btn_del_scene.png)no-repeat 50% 50%;
+    display:block;
+    width:30px;
+    height:30px;
+    background-size:40%;
+    position:absolute;
+    right:0px;
+    top:0px;
+    cursor:pointer;
+}
+.paragraph{
+    padding:10px 10px 30px 10px;
+    border-bottom:1px solid #d2d2d2;
+}
+.paragraph>div>.character{
+    overflow: hidden;
+}
+.paragraph>div>.character>.character_img{
+    width:30px;
+    height:30px;
+    display:block;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    vertical-align:middle;
+    border-radius: 50%;
+}
+.paragraph>div>.character>.name{
+    font-size:12px;
+    color:#333;
+    line-height:30px;
+}
+.paragraph.left>div>.character>.character_img{
+    float:left;
+    margin-right:4px;
+}
+.paragraph.right>div>.character>.character_img{
+    float:right;
+    margin-left:4px;
+}
+.paragraph.left>div>.character>.name{
+    float:left;}
+.paragraph.right>div>.character>.name{
+    float:right;}
+
+.paragraph.left .bubble_list>.bubble{
+    border-top-left-radius: 0;
+    background-color:#ebf9ff;
+    display: non
+}
+.paragraph.right .bubble_list>.bubble{
+    background-color: #fffcec;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+}
+.paragraph .bubble_list>.bubble{
+    background-color: #f8fbff;
+    padding:10px 10px 46px 10px;
+    margin:10px auto 0;
+    border-radius:20px;
+    border-top-left-radius: 0;
+    position:relative;
+    overflow: hidden;
+    border:1px solid #bdc1c7;
+    max-width:640px;
+}
+.paragraph .bubble_list>.bubble>textarea{
+    background-color:transparent;
+    border:0;
+    width:100%;
+    height:70px;
+    font-size:16px;
+}
+.paragraph .btn_tool{
+    overflow: hidden;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: #f5f6f8;
+    width:100%;
+    border-top:1px solid #bdc1c7;
+}
+.paragraph .btn_tool>button{
+    width:46px;
+    height:46px;
+    text-indent: -99999px;
+    display: block;
+    float: left;
+    border-right:1px solid #bdc1c7;
+}
+.paragraph .btn_tool>button:nth-child(1){
+    background:url(../img/btn_add_emo.png)no-repeat 50% 50%;
+    background-color:#edeff3;
+    background-size:42%;
+} 
+.paragraph .btn_tool>button:nth-child(2){
+    background:url(../img/btn_add_img.png)no-repeat 50% 50%;
+    background-size:42%;
+    background-color:#edeff3;
+}
+.paragraph .btn_tool>button:nth-child(3){
+    background:url(../img/btn_add_vd.png)no-repeat 50% 50%;
+    background-size:42%;
+    background-color:#edeff3;
+}
+.paragraph .btn_tool>button:nth-child(4){
+    background:url(../img/btn_add_link.png)no-repeat 50% 50%;
+    background-size:42%;
+    background-color:#edeff3;
+}
+.paragraph .btn_tool>.del_bubble{
+    width:46px;
+    height:46px;
+    text-indent: -99999px;
+    display: block;
+    float:right;
+    background:url(../img/btn_del_bubble.png)no-repeat 50% 50%;
+    background-size:50%;
+    
+}
+.btn_wrapper{
+    position: relative;
+    margin-top: 10px;
+    height:35px;
+}
+.btn_wrapper>.add_bubble{
+    font-size:13px;
+    line-height:36px;
+    color:#717b8f;
+    vertical-align:middle;
+    position:absolute;
+    left:0;
+}
+.btn_wrapper>.add_bubble>img{
+    width:36px;
+    height:36px;
+    margin-right:4px;
+}
+.btn_wrapper>.del_para{
+    position:absolute;
+    right:0;
+    font-size:13px;
+    color:#717b8f;
+    vertical-align:middle;
+    border:1px solid #bdc1c7;
+    border-radius:3px;
+    line-height:16px;
+    padding:8px 10px;
+    vertical-align: middle;
+}
+.btn_wrapper>.del_para>span{
+    width:13px;
+    height:16px;
+    display:inline-block;
+    background:url(../img/btn_del_talk.png)no-repeat 50% 50%;
+    background-size: 100%;
+    margin-right:3px;
+    margin-top:-3px;
+    vertical-align: middle;
+}
+.add_paragraph{
+    max-width:300px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    margin-top:20px;
+}
+.add_paragraph>button.add_p_btn{
+    border:1px solid #ff7676;
+    padding:8px;
+    color:#ff7676;
+    font-size:14px;
+    border-radius:3px;
+    width:100%;
+    position:relative;
+}
+.add_paragraph>button.add_p_btn>span{
+    background:url(../img/btn_add_paragraph.png)no-repeat 50% 50%;
+    width:34px;
+    height:34px;
+    background-size:44%;
+    position:absolute;
+    right:0;
+    top:0;
+}
+.add_paragraph.show>button.add_p_btn>span{
+    transform: rotate(45deg);
+    transition:transform 0.3s ease-in-out;
+}
+.add_paragraph>.sel_charactor{
+    position:absolute;
+    top:42px;
+    border:1px solid #ff7676;
+    border-radius:3px;
+    background-color: #fff;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+    width:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    z-index:90;
+    display:none;
+}
+.add_paragraph.show>.sel_charactor{
+    display:block;
+}
+.add_paragraph>ul>li.t{
+    background-color:#fbfbfb;
+    text-align: center;
+    padding:8px 6px 6px 6px;
+    color:#bababa;
+    font-size: 12px;
+}
+.add_paragraph>ul>li.t:before{
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:8px;
+    background-color:#bababa;
+    border-radius: 50%;
+    margin-right:8px;
+}
+.add_paragraph>ul>li.t:after{
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:8px;
+    background-color:#bababa;
+    border-radius: 50%;
+    margin-left:8px;
+}
+.add_paragraph>ul>li{
+    padding:14px;
+    font-size:16px;
+    font-weight:600;
+}
+.add_paragraph>ul>li:hover{
+    background-color:#ffe7e7;
+}
+.add_paragraph>ul>li.l:before{
+    content:"[L]";
+    font-size:16px;
+    display:inline;
+    margin-right:5px;
+}
+.add_paragraph>ul>li.r:before{
+    content:"[R]";
+    font-size:16px;
+    display:inline;
+    margin-right:5px;
+}
+.reaction{
+    background-color:#ffffff;
+}
+.reaction>.add_reaction{
+    background-color: #f6f6f6;
+    width:100%;
+    text-align: center;
+    padding:8px;
+}
+.reaction>.add_reaction>img{
+    width:10px;
+    height:8px;
+    vertical-align: middle;
+    transform: rotate(180deg);
+}
+.reaction>.add_reaction.show>img{
+    transform: rotate(0deg);
+}
+.reaction>.reaction_list{
+    background-color:#fff;
+    display: none;
+}
+.reaction>.reaction_list.show{
+    display:block;
+}
+.reaction>.reaction_list>li{
+    position:relative;
+    border-bottom: 1px solid #ededed;
+    padding:20px 10px ;
+}
+.reaction>.reaction_list>li>div{
+    position:relative;
+    padding:0 90px 0 70px;
+    margin-bottom: 6px;
+}
+.reaction>.reaction_list>li>div>b{
+    width:80px;
+    font-size: 13px;
+    color:#666;
+    display: inline-block;
+    position:absolute;
+    left:0;
+    line-height:38px;
+    font-weight: 300;
+}
+.reaction>.reaction_list>li>div>input{
+    border:1px solid #ddd;
+    padding:10px;
+    font-size:16px;
+    width:100%;
+    display: inline-block;
+}
+.reaction>.reaction_list>li>div>button{
+    display: inline-block;
+    right:0;
+    top:0;
+}
+.reaction>.reaction_list>li>span.react_txt{
+    display:inline-block;
+    font-size:13px;
+    color:#959eb1;
+    background-color:#eef0f3;
+    margin-left:70px;
+    border-radius:20px;
+    padding:7px 10px;
+    position:relative;
+    padding-right:26px;
+}
+.reaction>.reaction_list>li>span.react_txt.on{
+    color:#fff;
+    background-color:#222;
+}
+.reaction>.reaction_list>li>span.react_txt.on>.del_react{
+    background:url(../img/btn_del_react_on.png)no-repeat 50% 50%;
+    width:26px;
+    height:26px;
+    background-size:40%;
+    position:absolute;
+    z-index: 1;
+    right:0;
+    top:0;
+}
+.reaction>.reaction_list>li>span.react_txt>.del_react{
+    background:url(../img/btn_del_react_off.png)no-repeat 50% 50%;
+    width:26px;
+    height:26px;
+    background-size:40%;
+    position:absolute;
+    z-index: 1;
+    right:0;
+    top:0;
+}
+.add_secene{
+    color:#ff7676;
+    border:1px solid #ff7676;
+    border-radius: 40px;
+    background-color: #fff;
+    padding:10px 20px;
+    font-size:16px;
+    margin:20px auto;
+    display: block;
+    box-shadow: 0 4px 20px rgba(255,118,118,0.5);
+}
+.add_secene:hover{
+    background-color:#ff7676; 
+    color:#fff; 
+}
+.controls{
+    background-color:#fff;
+    border-top:1px solid #ff7676;
+    overflow: hidden;
+    height:55px;
+}
+.controls>div{
+    height:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: center;
+    width:136px;
+}
+.controls>.issue,.preview{
+   float:left;
+   border-right:1px solid #ededed;
+}
+.controls>.issue{
+    font-size:14px;
+    color:#666666;
+    vertical-align: middle;
+    line-height: 55px;
+}
+.controls>.issue>.toggle{
+    display: inline-block;
+    border-radius:20px;
+    background-color:#e1e1e1;
+    width:68px;
+    height:34px;
+    position:relative;
+    vertical-align: middle;
+    transition:background-color 0.3s linear;
+}
+.controls>.issue>.toggle>.switch{
+    background-color:#fff;
+    width:28px;
+    height:28px;
+    display: inline-block;
+    border-radius: 50%;
+    position:absolute;
+    left:3px;
+    top:3px;
+    animation: off 0.2s linear forwards;
+    -webkit-animation: off 0.2s linear forwards;
+    -moz-animation: off 0.2s linear forwards;
+    -o-animation: off 0.2s linear forwards;
+    z-index: 1;
+}
+.controls>.issue>.toggle>b{
+    position:absolute;
+    left:33px;
+    font-size:14px;
+    top:-10px;
+    color:#999;
+}
+.controls>.issue>.toggle.on{
+    background-color:#ff7676;
+    transition:background-color 0.3s linear;
+}
+.controls>.issue>.toggle.on>b {
+    color: #fff;
+    left:12px;
+}
+.controls>.issue>.toggle.on>.switch {
+    animation: on 0.2s linear forwards;
+    -webkit-animation: on 0.2s linear forwards;
+    -moz-animation: on 0.2s linear forwards;
+    -o-animation: on 0.2s linear forwards;
+}
+@keyframes on{
+    0%{left:3px;}
+    100%{left:37px}
+}
+@keyframes off{
+    0%{left:37px}
+    100%{left:3px;}
+}
+.controls>.preview>button{
+    color:#ff7676;
+    font-size:16px;
+    vertical-align: middle;
+    height:100%;
+    width:100%;
+}
+.controls>.preview>button>img{
+    width:22px;
+    height:auto;
+    margin-left:6px;
+    vertical-align: middle;
+}
+.controls>.save{
+    float:right;
+    height:100%;
+    background-color:#ff7676;
+    text-align:center;
+}
+.controls>.save>button{
+    color:#fff;
+    height:100%;
+    width:100%;
+    font-size:16px;
+}
+.controls>.save>button>img{
+    width:18px;
+    height:auto;
+    margin-left:6px;
+    vertical-align: middle;
+}
+/*
+==========================================================
+=====================@media max 480===========================
+*/
+@media screen and (max-width:480px){
+    .controls>div{
+        width:33.3%;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .preview {
+    border-right:0 solid #ededed;
+    }
+    .controls>.save{
+       width:33.3%;
+    }
+}
+/*
+==========================================================
+=====================@media max 360===========================
+*/
+@media screen and (max-width:360px){
+}
+/*
+==========================================================
+=====================@media max 320===========================
+*/
+@media screen and (max-width:320px){
+    .input_tit>input[type="text"] {
+    padding:10px 60px 10px 12px;
+    font-size:14px;
+    height:44px;
+    }
+    button.create {
+    right:4px;
+    top:4px;
+    padding:8px 14px;
+    }
+    .sceneList {
+    padding:6px;
+    }
+    .add_paragraph {
+    max-width:280px;
+    width:100%;
+    }
+    .controls {
+    height:45px;
+    }
+    .controls>.issue>.toggle {
+    width:60px;
+    height: 30px;
+    }
+    .controls>.issue>.toggle>.switch {
+    width: 24px;
+    height: 24px;
+    }
+    .controls>.issue>.toggle>b {
+    left:30px;
+    font-size: 12px;
+    }
+    .controls>.preview>button {
+    font-size:14px;
+    }
+    .controls>.save>button {
+    font-size:14px;
+    }
+    @keyframes on{
+    0%{left:3px;}
+    100%{left:33px}
+    }
+    @keyframes off{
+    0%{left:33px}
+    100%{left:3px;}
+    }
+    .reaction>.reaction_list>li>div {
+    margin-bottom:10px;
+    padding: 0 80px 0 64px;
+    }
+    .reaction>.reaction_list>li>div>b {
+    width:60px;
+    font-size:12px;
+    line-height: 1.4;
+    }
+    .reaction>.reaction_list>li>div>input {
+    padding:8px;
+    font-size: 14px;
+    }
+    .add_secene {
+    margin:15px auto;
+    padding:8px 16px;    
+    }
+    .controls>.issue {line-height:45px;}
+    .controls>.issue>.toggle>b {top: -7px;}
+    .reaction>.reaction_list>li>span.react_txt{
+    font-size: 12px;
+    margin-left:64px;
+    padding:8px 24px 6px 8px;    
+    }
+    .reaction>.reaction_list>li>span.react_txt>.del_react {
+    width: 25px;
+    height: 25px;
+    }
+    .reaction>.reaction_list>li>span.react_txt.on>.del_react {
+    width: 25px;
+    height: 25px;
+    }
+}

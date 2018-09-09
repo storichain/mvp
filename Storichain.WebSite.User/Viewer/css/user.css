@@ -1,0 +1,36 @@
+.user_react .btn_area {
+    /*display: none;*/
+}
+
+.scene,
+.user_react,
+.input_msg,
+.cutin_msg,
+.cut_spot,
+.kakao,
+.facebook,
+.story,
+.role .type dd,
+.role .type,
+.cut-in-msg,
+.input_msg{
+    display: none;
+}
+
+.btn_area{
+    margin:0 auto 37px;
+}
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+.role:first-child .type,
+.role:first-child .type dt,
+.role:first-child .type dd:first-of-type {
+    display: block;
+}

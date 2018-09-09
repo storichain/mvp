@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Storichain</title>
+</head>
+
+<body>
+	<table width="700" border="0" align="center" cellpadding="0" cellspacing="0" style="padding-top:49px;">
+		<tr>
+			<td>
+				<table width="660" border="0" align="center" cellpadding="0" cellspacing="0" style="border-bottom:5px solid #222;  height:50px; vertical-align:top;">
+					<tr>
+						<td style="padding-left:10px;"><img src="${DOMAIN_URL}Images/mail/logo_Storichain.gif" alt="Storichain" width="145" height="29" align="left" /></td>
+					</tr>
+				</table>
+				<table width="660" border="0" align="center" cellpadding="0" cellspacing="0" style=" border-left:1px solid #e4e4e4; border-right:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4; padding:0px 34px 0px 35px; ">
+					<tr>
+						<td>
+							<table width="591" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:30px; ">
+								<tr>
+									<td colspan="2" style="height:80px; vertical-align:middle;"><img src="${DOMAIN_URL}Images/mail/register_cong4.gif" width="355" height="25" alt="Storichain에서 주문하신 내역입니다." /></td>
+								</tr>
+								<tr>
+									<td colspan="2" style="font-size:12px; line-height:24px; color:#686868;"><span style="font-weight:bold; height:80px; vertical-align:top;">${nick_name} 고객님,</span><br />
+									Storichain를 이용해 주셔서 진심으로 감사드립니다.<br />
+									고객님의 주문이 정상적으로 이루어졌습니다. 아래내역을 확인해 주세요.</td>
+								</tr>
+							</table>
+							
+<!-- 
+							<table width="590" cellpadding="0" cellspacing="0" style="margin-bottom:30px;">								
+								<tr>
+									<td colspan="2" style="padding-bottom:14px; font-size:12px; font-weight:bold; color:#686868;">[ 결제정보 ]</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-top:2px solid #e5e5e5; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">주문금액</th>
+									<td style="padding:13px 0 13px 10px; border-top:2px solid #e5e5e5; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">1,005,000원</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">할인금액</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">5,000원</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">총 결제금액</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">1,000,000원</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">결제방법</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">OOOOOO OOOO OOOOOO OO OOOOO OOOO OOOO</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">결제일시</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">2013 - 12 - 31</td>
+								</tr>
+							</table>
+ -->
+
+
+							<table width="590" cellpadding="0" cellspacing="0" style="margin-bottom:50px;">								
+								<tr>
+									<td colspan="2" style="padding-bottom:14px; font-size:12px; font-weight:bold; color:#686868;">[ 주문하신 상품 ]</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-top:2px solid #e5e5e5; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">상품명</th>
+									<td style="padding:13px 0 13px 10px; border-top:2px solid #e5e5e5; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">${product_name}</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">주문일시</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">${order_date}</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">주문번호</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">${order_id}</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">주문상태</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">${order_status_name}</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">합계</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">${total_price} 원</td>
+								</tr>
+								<!--
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">셀러명</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">OOOOOO OOOO OOOOOO OO OOOOO OOOO OOOO</td>
+								</tr>
+								-->
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">거래정보</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">${order_info}</td>
+								</tr>
+                                ${v_bank_info}
+							</table>
+							
+							<table width="590" cellpadding="0" cellspacing="0" style="margin-bottom:50px;">								
+								<tr>
+									<td colspan="2" style="padding-bottom:14px; font-size:12px; font-weight:bold; color:#686868;">[ 받으시는 분 ]</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-top:2px solid #e5e5e5; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">이름</th>
+									<td style="padding:13px 0 13px 10px; border-top:2px solid #e5e5e5; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">${receiver_nick_name}</td>
+								</tr>
+								<!--
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">전화번호</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">02 - 1234 - 1234</td>
+								</tr>
+								-->
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">휴대폰번호</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">${cell_phone}</td>
+								</tr>
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left;">주소</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">${address}</td>
+								</tr>
+								<!--
+								<tr>
+									<th style="width:89px; padding:13px 14px 13px 16px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868; background-color:#f7f7f7; text-align:left; letter-spacing:-1px;">배송시 유의사항</th>
+									<td style="padding:13px 0 13px 10px; border-bottom:1px solid #e0e0e0; font-size:12px; color:#686868;">부재시 택배보관소에 맡겨주세요~^^</td>
+								</tr>
+								-->
+							</table>
+
+							<table width="591" border="0" align="center" cellpadding="0" cellspacing="0">
+								<tr>
+									<td align="center" style="height:100px; vertical-align:top;"><a href="${WEBSITE_URL}" ><img src="${DOMAIN_URL}Images/mail/direct_go.gif" alt="홈페이지 바로가기" width="205" height="50" align="middle" border="none" /></a></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table width="700" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:10px;">
+					<tr align="center">
+						<td style="font-size:11px; line-height:14px; color:#a0a0a0; ">Copyright @2018 Storichain Inc. All rights reserved.</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+body{
+    font-family:'AppleSDGothicNeo-Light','HelveticaNeue-Light',sans-serif;
+    max-width:1024px;
+}
+/*
+==========================================================
+=====================@media max 1024===========================
+*/
+/*공통*/
+header{
+    background-color: #ff7676;
+    width:100%;
+    position: fixed;
+    top:0;
+    z-index: 99;
+    left:0;
+    right:0;
+    max-width:1024px;
+}
+header > h1{
+    line-height: 50px;
+    color:#fff;
+    text-align: center;
+    font-size:16px;
+}
+header > .out{
+    background: url(../img/btn_out.png)no-repeat 50% 50%;
+    width:50px;
+    height:50px;
+    background-size:50%;
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+header > .manage_cont{
+    position:absolute;
+    right:8px;
+    top:8px;
+    background-color:#fff;
+    color:#ff7676;
+    font-size:14px;
+    font-weight:600;
+    line-height: 35px;
+    border-radius:2px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: middle;
+    padding:0 8px;
+}
+header > .manage_cont>img{
+    margin-right:5px;
+    width:20px;
+    height: auto;
+    vertical-align: middle;
+}
+.inner{
+    background-color: #f3f3f3;
+    padding-top:60px;
+}
+::-webkit-input-placeholder{ 
+    color:#888;
+    font-weight: 300;
+    font-size:12px;
+}
+::placeholder{
+    color:#888;
+    font-weight: 300;
+    font-size:12px;
+}
+::-moz-placeholder{
+    color:#888;
+    font-weight: 300;
+    font-size:12px;
+}
+::-ms-input-placeholder{ 
+    color:#888;
+    font-weight: 300;
+    font-size:12px;
+}
+textarea{
+    resize:none;
+}
+.back{
+    background:url(../img/btn_back.png)no-repeat 50% 50%;
+    background-size:50%;
+    width:50px;
+    height:50px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+/*
+==========================================================
+=====================@media max 480===========================
+*/
+@media screen and (max-width:480px){
+
+}
+/*
+==========================================================
+=====================@media max 360===========================
+*/
+@media screen and (max-width:360px){
+    header > .manage_cont {
+    font-size: 13px;
+    padding:0px 6px;
+    line-height:34px;
+    }
+    header > h1{
+    font-size:14px;
+    }
+}
+/*
+==========================================================
+=====================@media max 320===========================
+*/
+@media screen and (max-width:320px){
+    header {
+    font-size:14px;
+    }
+    header >h1{
+    line-height:44px;
+    }
+    header > .out {
+    width:44px;
+    height:44px;
+    }
+    header > .manage_cont {
+    right:6px;
+    top:6px;
+    font-size: 12px;
+    padding:0px 4px;
+    line-height:32px;
+    }
+    header > .manage_cont>img {
+    margin-right:4px;
+    width:18px;
+    }
+    .inner {
+    padding-top:50px;
+    }
+    .back{
+    width:44px;
+    height:44px;
+    }
+   
+}

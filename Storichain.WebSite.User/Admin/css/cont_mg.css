@@ -1,0 +1,404 @@
+body{
+    font-family:'AppleSDGothicNeo-Light','HelveticaNeue-Light',sans-serif;
+    max-width:1024px;
+}
+/*
+==========================================================
+=====================@media max 1024===========================
+*/
+ul.tab{
+    margin-top:50px;
+    background-color: rgba(255,255,255,0.9);
+    width:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    max-width:1024px;
+    z-index:20;
+}
+ul.tab>li{
+    display: inline-block;
+    width:33.33%;
+    margin-right:-4px;
+    border-bottom: 1px solid #ededed;
+    cursor: pointer;
+}
+ul.tab>li>a.on{
+    border-bottom:3px solid #ff7676;
+    height:47px;
+    color: #ff7676;
+}
+ul.tab>li:nth-child(1)>a.on:before{
+    content: "";
+    background:url(../img/tab_01_on.png)no-repeat 50% 50%;
+    background-size:100%;
+}
+ul.tab>li:nth-child(2)>a.on:before{
+    content: "";
+    background:url(../img/tab_02_on.png)no-repeat 50% 50%;
+    background-size:100%;
+}
+ul.tab>li:nth-child(3)>a.on:before{
+    content: "";
+    background:url(../img/tab_03_on.png)no-repeat 50% 50%;
+    background-size:100%;
+}
+ul.tab>li>a{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    width:100%;
+    height:50px;
+    color:#999;
+    font-size: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+ul.tab>li>a:before{
+    width:22px;
+    height:22px;
+    display:inline-block;
+    vertical-align: middle;
+    margin-right:4px;
+}
+ul.tab>li:nth-child(1)>a:before{
+    content: "";
+    background:url(../img/tab_01_off.png)no-repeat 50% 50%;
+    background-size:100%;
+}
+ul.tab>li:nth-child(2)>a:before{
+    content: "";
+    background:url(../img/tab_02_off.png)no-repeat 50% 50%;
+    background-size:100%;
+}
+ul.tab>li:nth-child(3)>a:before{
+    content: "";
+    background:url(../img/tab_03_off.png)no-repeat 50% 50%;
+    background-size:100%;
+}
+.reg_character{
+    position:relative;
+}
+.reg_character .info{
+    padding:0 10px 20px;
+    display:block;
+}
+.reg_character .btn_fold{
+    position:relative;
+    display: block;
+    color:#ff7676;
+    font-size:12px;
+    z-index: 10;
+    text-align: right;
+    width:100%;
+    padding:10px;
+}
+.reg_character .btn_fold>b{
+    display: none;
+}
+.reg_character .btn_fold>span{
+    background:url(../img/btn_fold.png)no-repeat 50% 50%;
+    background-size:50%;
+    display: inline-block;
+    width:30px;
+    height:20px;
+    vertical-align:middle;
+}
+.reg_character .btn_fold.hide>span{
+    transform:rotate(180deg);
+}
+.reg_character .profile{
+    position: relative;
+    width:56px;
+    height:56px; 
+    margin:0 auto;
+    overflow: visible;
+    background-size:cover;
+    border-radius:50%;
+    background-position: center;
+}
+.reg_character .profile>.add_profile{
+    width:130px;
+    left:70%;
+    text-align: left;
+    position:absolute;
+    bottom:0;
+    cursor: pointer;
+}
+.reg_character .profile>.add_profile>button{
+    width:30px;
+    height:30px;
+    vertical-align: middle;
+    margin-right:6px;
+    position:absolute;
+    left:0;
+    background:url(../img/btn_add_profile_nor.png)no-repeat 50% 50%;
+    background-size:100%;
+    display: inline-block;
+}
+.reg_character .profile>.add_profile>input[type="file"]{
+    width:30px;
+    height:30px;
+    vertical-align: middle;
+    margin-right:6px;
+    position:absolute;
+    left:0;
+    z-index:2;
+    opacity:0;
+    cursor: pointer;
+    pointer-events: all;
+}
+.reg_character .profile>.add_profile>label{
+    color:#ff7676;
+    padding-left: 34px;
+    font-size: 12px;
+    line-height: 30px;
+}
+.reg_character input[type="text"]{
+    width:100%;
+    border:1px solid #ededed;
+    height:40px;
+    padding:5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin:10px 0;
+    font-size:16px;
+}
+.reg_character .btn_regist{
+    width:100%;
+    display: block;
+    color:#fff;
+    background-color: #ff7676;
+    line-height: 40px;
+    font-size:16px;
+}
+.reg_list{
+     border-top:1px solid #ddd;
+}
+.reg_list h2{
+    font-size:13px;
+    padding:13px 10px 10px;
+    color:#91969f;
+    font-weight: 400;
+}
+.row.on{
+    background-color:#f1f9ff;
+}
+.ch_list>.sub_tit{
+    background-color:#eef1f3;
+    padding:10px;
+}
+.ch_list>.sub_tit>span{
+    display: inline-block;
+    font-size:13px;
+    color:#666;
+    margin-right:-4px;
+}
+.ch_list>.sub_tit>span:nth-child(1){
+    width:62%;
+    text-align: center;
+}
+.ch_list>.sub_tit>span:nth-child(2){
+    width:24%;
+    text-align: center;
+}
+.ch_list>.sub_tit>span:nth-child(3){
+    width:14%;
+    text-align:center;
+}
+.ch_list>.row{
+    padding:10px;
+    border-bottom:1px solid #ededed;
+}
+.ch_list>.row>span{
+    display: inline-block;
+    margin-right:-4px;
+    vertical-align: middle;
+}
+.ch_list>.row>.profile_img{
+    margin-right:4px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color:#ededed;
+    background-size:cover;
+    background-position: center;
+}
+.ch_list>.row>.profile_txt{
+    font-size:14px;
+    width:56%;
+    font-weight:400;
+}
+.radio{
+    width:24%;
+    text-align: center;
+}
+.radio>span{
+    position:relative;
+    margin-right:16px;
+}
+.radio>span>input[type="radio"]{
+    width:20px;
+    height:20px;
+    opacity:0;
+    z-index:2;
+    position:absolute;
+    left:0;
+    margin:0;
+    vertical-align: middle;
+}
+.radio>span>span{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    z-index:1;
+    position:absolute;
+    left:0;
+}
+.radio>span>input:checked ~ span{
+    background:url(../img/radio_on.png)no-repeat 50% 50%;
+    background-size:100%;
+}
+.radio>span>input ~ span{
+    background:url(../img/radio_off.png)no-repeat 50% 50%;
+    background-size:100%;
+}
+.radio>span>label{
+    padding-left:25px;
+    font-size:14px;
+    line-height: 20px;
+}
+.ch_list>.row>.btn_check{
+    width:12%;
+    text-align:right;
+}
+.ch_list>.row>.btn_check>button.on{
+    background-color:#ff7676;
+}
+.ch_list>.row>.btn_check>button{
+    background-color:#cbcfd6;
+    color:#fff;
+    padding:8px;
+    font-size:14px;
+    border-radius: 2px;
+}
+.ch_list>.row>.btn_check>button:after{
+    content: "";
+    width:16px;
+    height:16px;
+    display: inline-block;
+    margin-left:6px;
+    background:url(../img/btn_use.png)no-repeat 50% 50%;
+    background-size:100%;
+}
+button.top{
+    display: block;
+    padding:8px;
+    width:100px;
+    color:#a7a7a7;
+    font-size:14px;
+    border:1px solid #e2e2e2;
+    border-radius: 2px;
+    margin:10px auto 30px;
+}
+button.top:before{
+    content:"";
+    background:url(../img/btn_top.png)no-repeat 50% 50%;
+    width:12px;
+    height:12px;
+    display: inline-block;
+    background-size:100%;
+    margin-right:4px;
+}
+
+/*
+==========================================================
+=====================@media max 480===========================
+*/
+
+@media screen and (max-width:480px){
+    .ch_list > .row > .profile_txt {width:30%;}
+    .radio {width:36%;}
+    .ch_list > .row > .btn_check {width:20%;}
+    .radio>span {margin-right:4px;}
+    .radio>span>label {font-size: 14px;}
+    .ch_list>.sub_tit {
+        padding: 10px 6px;
+        font-size:13px;
+    }
+    .ch_list > .sub_tit > span:nth-child(1){width:46%;}
+    .ch_list>.sub_tit>span:nth-child(2){width:28%;}
+    .ch_list > .sub_tit > span:nth-child(3){width:26%;}
+    .ch_list>.row>.btn_check>button {
+    padding:8px;
+    font-size:14px;
+    }
+    .ch_list>.row>.btn_check>button:after{
+    width:14px;
+    height:14px;
+    margin-left:4px;
+    }
+}
+/*
+==========================================================
+=====================@media max 360===========================
+*/
+
+@media screen and (max-width:360px){
+    .ch_list > .row > .profile_txt {width:26%;}
+    .radio {width:38%;}
+}
+
+/*
+==========================================================
+=====================@media max 320===========================
+*/
+
+@media screen and (max-width:320px){
+    .reg_character input[type="text"]{
+    height:36px;
+    padding:6px;
+    font-size:14px;
+    margin-bottom: 6px;
+    }
+    .reg_character .btn_regist{
+    font-size:13px;
+    line-height:36px;
+    }
+    .ch_list > .row > .profile_txt {
+    width:24%;
+    font-size:12px;
+    }
+    .radio {width:41%;}
+    .radio>span>label {font-size: 12px;}
+    .ch_list > .row > .btn_check {width:18%;}
+    .ch_list > .row > .btn_check>button{
+    font-size:12px;
+    padding:8px 5px;
+    }
+    .ch_list>.row>.btn_check>button:after {
+    width: 12px;
+    height: 12px;
+    margin-left:4px;
+    }
+    .ch_list>.sub_tit>span {font-size:12px;}
+    .ch_list > .sub_tit > span:nth-child(1){width:45%;}
+    .ch_list>.sub_tit>span:nth-child(2) {width:26%;}
+    ul.tab {margin-top:44px;}
+    .ch_list > .sub_tit > span:nth-child(3){width:30%;}
+    ul.tab>li>a {
+    line-height:40px;
+    height:40px;
+    font-size:14px;
+    }
+    ul.tab>li>a.on {height:37px;}
+    .reg_character .btn_fold {padding:6px;}
+    button.top{
+    padding:6px;
+    font-size:12px;
+    width:90px;
+    }
+}
